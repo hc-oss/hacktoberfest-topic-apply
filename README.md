@@ -1,6 +1,6 @@
 # Hacktoberfest Topic Apply
 
-Deployed at https://hf-topic-apply.netlify.app
+Deployed at https://hf-topic-apply.vercel.app
 
 Apply or Remove hacktoberfest Topic at Ease
 
