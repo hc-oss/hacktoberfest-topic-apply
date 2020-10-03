@@ -1,0 +1,36 @@
+{
+  "name": "hacktoberfest-topic-apply",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "prettier --write src/**/*.{js,jsx,ts,tsx}"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^1.0.0-rc.5",
+    "@octokit/rest": "^18.0.6",
+    "axios": "^0.20.0",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-data-table-component": "^6.11.5",
+    "react-dom": "16.13.1",
+    "react-github-corner": "^2.5.0",
+    "styled-components": "^5.2.0",
+    "use-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/icons": "^1.0.0-rc.5",
+    "@octokit/types": "^5.5.0",
+    "@types/react": "^16.9.50",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-react": "^7.21.3",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
