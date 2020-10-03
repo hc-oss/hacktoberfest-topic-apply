@@ -25,7 +25,7 @@ export default function UsernameForm() {
   };
 
   return (
-    <Box mb={6}>
+    <Box>
       <Heading size="lg" as="h2" mb={4} fontWeight="normal">
         👤 Set ID
       </Heading>
@@ -46,7 +46,12 @@ export default function UsernameForm() {
           </InputGroup>
           <FormHelperText>
             Example: <strong>harshzalavadiya</strong> for
-            <Link target="_blank" href="https://github.com/harshzalavadiya" fontWeight="bold" mx={1}>
+            <Link
+              target="_blank"
+              href="https://github.com/harshzalavadiya"
+              fontWeight="bold"
+              mx={1}
+            >
               https://github.com/harshzalavadiya
             </Link>
           </FormHelperText>
@@ -58,7 +63,6 @@ export default function UsernameForm() {
           isDisabled={!username}
           onClick={getAllRepos}
           leftIcon={<SearchIcon />}
-          mb={6}
           isLoading={isLoadingRepo}
         >
           List Repositories

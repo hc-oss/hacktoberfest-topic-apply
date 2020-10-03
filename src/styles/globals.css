@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.chakra-skeleton header {
+  padding: 0 !important;
+  min-height: initial!important;
+}
