@@ -25,7 +25,7 @@ export default function UsernameForm() {
   };
 
   return (
-    <Box mb={6}>
+    <Box>
       <Heading size="lg" as="h2" mb={4} fontWeight="normal">
         👤 Set ID
       </Heading>
@@ -58,7 +58,6 @@ export default function UsernameForm() {
           isDisabled={!username}
           onClick={getAllRepos}
           leftIcon={<SearchIcon />}
-          mb={6}
           isLoading={isLoadingRepo}
         >
           List Repositories

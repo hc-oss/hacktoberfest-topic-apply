@@ -14,11 +14,11 @@ export default function HomePageComponent() {
 
       <Alert status="info" mb={6} borderRadius="md">
         <AlertIcon />
-        This application communicates GitHub API directly and your access token is never saved
+        This application communicates with GitHub API directly and your access token is never saved
         anywhere
       </Alert>
 
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mb={6}>
         <UsernameForm />
         <TokenForm />
       </SimpleGrid>

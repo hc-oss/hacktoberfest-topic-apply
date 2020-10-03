@@ -19,7 +19,7 @@ export default function TokenForm() {
   const handleOnTokenChange = (e) => setToken(e.target.value);
 
   return (
-    <Box mb={6}>
+    <Box>
       <Heading size="lg" as="h2" mb={4} fontWeight="normal">
         🔑 Set Access Token
       </Heading>

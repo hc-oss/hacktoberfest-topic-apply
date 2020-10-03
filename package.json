@@ -13,6 +13,7 @@
     "@chakra-ui/core": "^1.0.0-rc.5",
     "@octokit/rest": "^18.0.6",
     "axios": "^0.20.0",
+    "human-readable-numbers": "^0.9.5",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-data-table-component": "^6.11.5",
