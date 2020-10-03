@@ -1,5 +1,5 @@
-import { Box, Button, ButtonGroup, Flex, Input, Skeleton, useToast } from "@chakra-ui/core";
-import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
+import { Box, Button, ButtonGroup, Flex, Input, Link, Skeleton, useToast } from "@chakra-ui/core";
+import { AddIcon, DeleteIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import useOctokit from "@hooks/useOctokit";
 import React, { useMemo, useState } from "react";
 import DataTable from "react-data-table-component";
@@ -47,7 +47,12 @@ export default function RepoTable() {
     {
       name: "Name",
       selector: "name",
-      sortable: true
+      sortable: true,
+      cell: ({ html_url, name }) => (
+        <Link target="_blank" rel="noopener noreferrer" href={html_url} color="blue.500">
+          {name} <ExternalLinkIcon />
+        </Link>
+      )
     },
     {
       name: "Topic",
