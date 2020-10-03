@@ -46,7 +46,12 @@ export default function UsernameForm() {
           </InputGroup>
           <FormHelperText>
             Example: <strong>harshzalavadiya</strong> for
-            <Link target="_blank" href="https://github.com/harshzalavadiya" fontWeight="bold" mx={1}>
+            <Link
+              target="_blank"
+              href="https://github.com/harshzalavadiya"
+              fontWeight="bold"
+              mx={1}
+            >
               https://github.com/harshzalavadiya
             </Link>
           </FormHelperText>

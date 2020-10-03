@@ -60,7 +60,7 @@ export default function RepoTable() {
             onChange={(e) => setFilterText(e.target.value)}
           />
         </InputGroup>
-        <ButtonGroup isDisabled={!token} justifySelf={{md: "end"}} spacing={4}>
+        <ButtonGroup isDisabled={!token} justifySelf={{ md: "end" }} spacing={4}>
           <Button
             colorScheme="green"
             isLoading={isAddLoading}
@@ -103,21 +103,21 @@ export default function RepoTable() {
       selector: "stargazers_count",
       width: "6rem",
       sortable: true,
-      hide: "sm",
+      hide: "sm" as any,
       cell: ({ stargazers_count }) => toHumanString(stargazers_count)
     },
     {
       name: "Last Updated",
       selector: "updated_at",
       width: "12rem",
-      hide: "sm",
+      hide: "sm" as any,
       sortable: true
     },
     {
+      name: "",
       selector: "topic",
       width: "12rem",
-      cell: TopicActionButton,
-      center: true
+      cell: TopicActionButton
     }
   ];
 

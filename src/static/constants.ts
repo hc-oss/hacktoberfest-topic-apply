@@ -1,4 +1,4 @@
-export const apptitle = "Hacktoberfest Topic Apply"
+export const apptitle = "Hacktoberfest Topic Apply";
 
 export const labels = [
   {
