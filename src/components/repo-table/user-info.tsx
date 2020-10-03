@@ -8,7 +8,12 @@ export default function UserInfo() {
   return (
     <div>
       {userInfo && (
-        <Link href={userInfo.url} target="_blank" rel="noreferrer" display="flex">
+        <Link
+          href={userInfo.url}
+          target="_blank"
+          rel="noreferrer"
+          display="flex"
+        >
           <Image
             boxSize="2.4rem"
             src={userInfo.avatar_url}

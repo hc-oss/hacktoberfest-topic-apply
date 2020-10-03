@@ -8,7 +8,7 @@ import {
   Link,
   SimpleGrid,
   Skeleton,
-  useToast
+  useToast,
 } from "@chakra-ui/core";
 import { AddIcon, DeleteIcon, ExternalLinkIcon, SearchIcon } from "@chakra-ui/icons";
 import useOctokit from "@hooks/useOctokit";
@@ -51,16 +51,7 @@ export default function RepoTable() {
     () => (
       <SimpleGrid w="full" columns={{ base: 1, md: 3 }} p={4} pb={0} spacing={4}>
         <UserInfo />
-        <InputGroup>
-          <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
-          <Input
-            name="search"
-            type="search"
-            placeholder="Filter Repositories"
-            onChange={(e) => setFilterText(e.target.value)}
-          />
-        </InputGroup>
-        <ButtonGroup isDisabled={!token} justifySelf={{ md: "end" }} spacing={4}>
+        <ButtonGroup isDisabled={!token} spacing={4} justifyContent={{ md: "flex-end" }}>
           <Button
             colorScheme="green"
             isLoading={isAddLoading}
@@ -78,6 +69,15 @@ export default function RepoTable() {
             {topic}
           </Button>
         </ButtonGroup>
+        <InputGroup>
+          <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
+          <Input
+            name="search"
+            type="search"
+            placeholder="Filter Repositories"
+            onChange={(e) => setFilterText(e.target.value)}
+          />
+        </InputGroup>
       </SimpleGrid>
     ),
     [token, repos]
