@@ -1,3 +1,4 @@
+import { AddIcon, DeleteIcon, ExternalLinkIcon, SearchIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -8,9 +9,8 @@ import {
   Link,
   SimpleGrid,
   Skeleton,
-  useToast,
-} from "@chakra-ui/core";
-import { AddIcon, DeleteIcon, ExternalLinkIcon, SearchIcon } from "@chakra-ui/icons";
+  useToast
+} from "@chakra-ui/react";
 import useOctokit from "@hooks/useOctokit";
 import { toHumanString } from "human-readable-numbers";
 import React, { useMemo, useState } from "react";

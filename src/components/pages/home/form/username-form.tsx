@@ -1,3 +1,4 @@
+import { CheckIcon, SearchIcon, WarningIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -9,8 +10,7 @@ import {
   InputGroup,
   InputRightElement,
   Link
-} from "@chakra-ui/core";
-import { CheckIcon, SearchIcon, WarningIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react";
 import useOctokit from "@hooks/useOctokit";
 import React from "react";
 

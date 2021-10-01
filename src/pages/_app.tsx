@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 
-import { ChakraProvider } from "@chakra-ui/core";
+import { ChakraProvider } from "@chakra-ui/react";
 import { apptitle } from "@static/constants";
 import Head from "next/head";
 import React from "react";

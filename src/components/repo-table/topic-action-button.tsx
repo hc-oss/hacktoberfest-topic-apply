@@ -1,5 +1,5 @@
-import { Button } from "@chakra-ui/core";
 import { AddIcon, DeleteIcon } from "@chakra-ui/icons";
+import { Button } from "@chakra-ui/react";
 import useOctokit from "@hooks/useOctokit";
 import React, { useEffect, useState } from "react";
 

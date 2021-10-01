@@ -1,4 +1,4 @@
-import { Alert, AlertIcon, Container, Heading, SimpleGrid } from "@chakra-ui/core";
+import { Alert, AlertIcon, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import TokenForm from "@components/pages/home/form/token-form";
 import UsernameForm from "@components/pages/home/form/username-form";
 import RepoTable from "@components/repo-table";
@@ -7,7 +7,7 @@ import React from "react";
 
 export default function HomePageComponent() {
   return (
-    <Container maxW="xl">
+    <Container maxW="6xl">
       <Heading size="lg" py={6}>
         🏷️ {apptitle}
       </Heading>
