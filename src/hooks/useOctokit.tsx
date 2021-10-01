@@ -1,4 +1,3 @@
-import { UsersGetByUsernameResponseData } from "@octokit/types";
 import { uAddTopic, uGetAllRepos, uGetUserInfo, uRemoveTopic } from "@utils/octokit";
 import { useRouter } from "next/router";
 import React, { createContext, useContext, useEffect, useState } from "react";
@@ -8,7 +7,7 @@ interface OctokitContextProps {
   repos: any[];
   getAllRepos: () => void;
 
-  userInfo: UsersGetByUsernameResponseData;
+  userInfo?;
 
   username: string;
   setUsername: (username: string) => void;
@@ -36,7 +35,7 @@ const OctokitContext = createContext<OctokitContextProps>({} as OctokitContextPr
 export const OctokitProvider = ({ children }: OctokitProviderProps) => {
   const { query } = useRouter();
   const [username, setUsername] = useState<string>();
-  const [userInfo, setUserInfo] = useState<UsersGetByUsernameResponseData>();
+  const [userInfo, setUserInfo] = useState<any>();
   const [isLoadingRepo, setIsLoadingRepo] = useState<boolean>();
   const [addLabels, setAddLabels] = useState<boolean>(true);
   const [token, setToken] = useState<string>();

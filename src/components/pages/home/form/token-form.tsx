@@ -1,3 +1,4 @@
+import { CheckIcon, ExternalLinkIcon, WarningIcon } from "@chakra-ui/icons";
 import {
   Box,
   FormControl,
@@ -8,8 +9,7 @@ import {
   InputGroup,
   InputRightElement,
   Link
-} from "@chakra-ui/core";
-import { CheckIcon, ExternalLinkIcon, WarningIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react";
 import useOctokit from "@hooks/useOctokit";
 import React from "react";
 
@@ -41,7 +41,7 @@ export default function TokenForm() {
           Token is required for updating topics
           <Link
             target="_blank"
-            href="https://github.com/settings/tokens/new?description=hacktoberfest&scopes=repo"
+            href="https://github.com/settings/tokens/new?description=hacktoberfest&scopes=public_repo"
             fontWeight="bold"
             color="blue.500"
             mx={1}
